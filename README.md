@@ -51,7 +51,7 @@ SPOTIFY_CLIENT_SECRET=<your_spotify_client_secret>
 ### 6. Run the Spotify Auth App and Get the API Key
 Make sure Docker Desktop is running, and start the authorization proxy server:
 ```
-$docker run --rm -it -p 27228:27228 --env-file ./.env ghcr.io/conradludgate/spotify-auth-proxy
+docker run --rm -it -p 27228:27228 --env-file ./.env ghcr.io/conradludgate/spotify-auth-proxy
 ```
 You should get the APIKEY and AUTH URL. Click on the AUTH URL to confirm your authentication. You should get “Authorization Successful” Message.
 
